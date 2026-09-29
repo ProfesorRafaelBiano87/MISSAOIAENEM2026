@@ -55,6 +55,24 @@ h1 {
     margin-bottom: 25px;
 }
 
+.caixa-missao {
+    background: rgba(0, 223, 216, 0.1);
+    border: 1px solid var(--cor-gradiente-2);
+    color: #00dfd8;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.descricao-inicial {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 25px;
+}
+
 .caixa-perguntas {
     font-size: 1.15rem;
     font-weight: 600;
@@ -83,9 +101,10 @@ button {
     font-size: 0.95rem;
     font-weight: 500;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
     line-height: 1.4;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
 }
 
 button:hover {
@@ -98,6 +117,13 @@ button:hover {
 
 button:active {
     transform: translateY(0);
+}
+
+.btn-iniciar, .btn-jogar-novamente {
+    background: linear-gradient(135deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 15px;
 }
 
 .caixa-resultado {
@@ -113,6 +139,11 @@ button:active {
     border-radius: 16px;
     border: 1px dashed var(--cor-borda);
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+.escondido {
+    display: none !important;
 }
 
 @media (max-width: 480px) {
