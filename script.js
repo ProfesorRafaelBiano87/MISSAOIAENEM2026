@@ -9,17 +9,17 @@ const perguntas = [
         enunciado: "O ano letivo começou e a contagem regressiva para o ENEM já está valendo. Qual é o seu primeiro passo para organizar a rotina de estudos?",
         alternativas: [
             {
-                texto: "Montar um cronograma rigoroso dividindo matérias por dias e horários fixation.",
+                texto: "Montar um cronograma rigoroso dividindo matérias por dias e horários fixos.",
                 afirmacao: [
                     "Você é uma pessoa altamente disciplinada que busca controle e previsibilidade na sua rotina de estudos.",
-                    "Você tem as Manhas meu jovem, isso é uma ótima estratégia."
+                    "Você tem as manhas, isso é uma ótima estratégia."
                 ]
             },
             {
                 texto: "Focar em resolver provas antigas e aprender com os erros na prática através de simulados.",
                 afirmacao: [
                     "Sua abordagem é prática e focada no formato real da prova, aprendendo pela resolução de problemas.",
-                    "Uma boa estatégia,pois gera um conhecimento do método das provas."
+                    "Uma boa estratégia, pois gera um conhecimento do método das provas."
                 ]
             }
         ]
@@ -31,14 +31,14 @@ const perguntas = [
                 texto: "Utilizar modelos de estrutura de texto para garantir rapidez e segurança no dia do exame.",
                 afirmacao: [
                     "Gosta de otimizar seu tempo usando estratégias consolidadas para evitar imprevistos.",
-                    "Modelos de estrutura proporciona uma organização efetiva no processo de criação da redação."
+                    "Modelos de estrutura proporcionam uma organização efetiva no processo de criação da redação."
                 ]
             },
             {
                 texto: "Ler atualidades, filosofias e repertórios socioculturais diversos para criar argumentos originais.",
                 afirmacao: [
                     "Desenvolve uma visão crítica e repertório amplo para construir ideias autênticas e bem fundamentadas.",
-                    "Buscar fontes atualizadas de temas do cotidiano é uma boa estatégia."
+                    "Buscar fontes atualizadas de temas do cotidiano é uma boa estratégia."
                 ]
             }
         ]
@@ -50,14 +50,14 @@ const perguntas = [
                 texto: "Acelera o ritmo de revisões até a véspera para não deixar nenhum detalhe passar.",
                 afirmacao: [
                     "Sua determinação e foco inabalável te levam a dar o máximo de si até o último momento.",
-                    "Sangue no Zóio kkkk, pois chegou o momento de brilhar",
+                    "Sangue no olho! Pois chegou o momento de brilhar."
                 ]
             },
             {
                 texto: "Equilibra os estudos com exercícios físicos, momentos de descanso e boas noites de sono.",
                 afirmacao: [
                     "Reconhece a importância da saúde mental e do descanso estratégico para alcançar o alto rendimento.",
-                    "O momento de auto cuidado é muito importante nesse momento de alto stress"
+                    "O momento de autocuidado é muito importante nesse momento de alto estresse."
                 ]
             }
         ]
@@ -69,14 +69,14 @@ const perguntas = [
                 texto: "Lê primeiro o comando da questão e as alternativas para saber exatamente o que buscar no texto.",
                 afirmacao: [
                     "Aplica táticas ágeis de leitura focada para economizar tempo e energia mental durante a prova.",
-                    "Deve-se ter muita atenção na leitura dos texto"
+                    "Deve-se ter muita atenção na leitura do texto."
                 ]
             },
             {
                 texto: "Lê todo o texto com muita atenção antes de ir para as perguntas e alternativas.",
                 afirmacao: [
                     "Prioriza a interpretação profunda para evitar pegadinhas e ter certeza total da resposta.",
-                    "Prioriza a leitura rapida mas efetiva e de qualidade."
+                    "Prioriza a leitura rápida mas efetiva e de qualidade."
                 ]
             }
         ]
@@ -88,14 +88,14 @@ const perguntas = [
                 texto: "Pesquisa notas de corte, faz simulações de cursos e cria vários planos de ação.",
                 afirmacao: [
                     "Trabalha com planejamento estratégico e flexibilidade para aproveitar as melhores oportunidades universitárias.",
-                    "Realzia pesquisas em universidades qual seria a melhor instituição."
+                    "Realiza pesquisas em universidades para ver qual seria a melhor instituição."
                 ]
             },
             {
                 texto: "Mantém a calma, confia no processo de preparação realizado e aguarda os resultados finais.",
                 afirmacao: [
                     "Enfrenta grandes mudanças de ciclo com maturidade, autoconfiança e serenidade.",
-                    "Relaxa e curte o momento,apenas aguardando o protoloco"
+                    "Relaxa e curte o momento, apenas aguardando o protocolo."
                 ]
             }
         ]
@@ -120,6 +120,7 @@ function mostraPergunta() {
 function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.type = "button";
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
@@ -137,10 +138,10 @@ function mostraResultado(){
     caixaPerguntas.textContent = "Seu Perfil de Candidato ao ENEM:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
-    caixaResultado.classList.add("mostrar"); 
 }
+
 function aleatorio (lista){
-    const posicao = Math.floor(Math.random() * lista.length); 
+    const posicao = Math.floor(Math.random() * lista.length);
     return lista[posicao];
 }
 
