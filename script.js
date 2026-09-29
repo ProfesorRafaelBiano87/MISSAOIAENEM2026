@@ -137,9 +137,10 @@ function mostraResultado(){
     caixaPerguntas.textContent = "Seu Perfil de Candidato ao ENEM:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
+    caixaResultado.classList.add("mostrar"); 
 }
 function aleatorio (lista){
-const posicao = Math.floor(Math.randon()* lista.length);
+    const posicao = Math.floor(Math.random() * lista.length); 
     return lista[posicao];
 }
 
