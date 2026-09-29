@@ -10,11 +10,17 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Montar um cronograma rigoroso dividindo matérias por dias e horários fixation.",
-                afirmacao: "Você é uma pessoa altamente disciplinada que busca controle e previsibilidade na sua rotina de estudos."
+                afirmacao: [
+                    "Você é uma pessoa altamente disciplinada que busca controle e previsibilidade na sua rotina de estudos.",
+                    "Você tem as Manhas meu jovem, isso é uma ótima estratégia."
+                ]
             },
             {
                 texto: "Focar em resolver provas antigas e aprender com os erros na prática através de simulados.",
-                afirmacao: "Sua abordagem é prática e focada no formato real da prova, aprendendo pela resolução de problemas."
+                afirmacao: [
+                    "Sua abordagem é prática e focada no formato real da prova, aprendendo pela resolução de problemas.",
+                    "Uma boa estatégia,pois gera um conhecimento do método das provas."
+                ]
             }
         ]
     },
@@ -23,11 +29,17 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Utilizar modelos de estrutura de texto para garantir rapidez e segurança no dia do exame.",
-                afirmacao: "Gosta de otimizar seu tempo usando estratégias consolidadas para evitar imprevistos."
+                afirmacao: [
+                    "Gosta de otimizar seu tempo usando estratégias consolidadas para evitar imprevistos.",
+                    "Modelos de estrutura proporciona uma organização efetiva no processo de criação da redação."
+                ]
             },
             {
                 texto: "Ler atualidades, filosofias e repertórios socioculturais diversos para criar argumentos originais.",
-                afirmacao: "Desenvolve uma visão crítica e repertório amplo para construir ideias autênticas e bem fundamentadas."
+                afirmacao: [
+                    "Desenvolve uma visão crítica e repertório amplo para construir ideias autênticas e bem fundamentadas.",
+                    "Buscar fontes atualizadas de temas do cotidiano é uma boa estatégia."
+                ]
             }
         ]
     },
@@ -36,11 +48,17 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Acelera o ritmo de revisões até a véspera para não deixar nenhum detalhe passar.",
-                afirmacao: "Sua determinação e foco inabalável te levam a dar o máximo de si até o último momento."
+                afirmacao: [
+                    "Sua determinação e foco inabalável te levam a dar o máximo de si até o último momento.",
+                    "Sangue no Zóio kkkk, pois chegou o momento de brilhar",
+                ]
             },
             {
                 texto: "Equilibra os estudos com exercícios físicos, momentos de descanso e boas noites de sono.",
-                afirmacao: "Reconhece a importância da saúde mental e do descanso estratégico para alcançar o alto rendimento."
+                afirmacao: [
+                    "Reconhece a importância da saúde mental e do descanso estratégico para alcançar o alto rendimento.",
+                    "O momento de auto cuidado é muito importante nesse momento de alto stress"
+                ]
             }
         ]
     },
@@ -49,11 +67,17 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Lê primeiro o comando da questão e as alternativas para saber exatamente o que buscar no texto.",
-                afirmacao: "Aplica táticas ágeis de leitura focada para economizar tempo e energia mental durante a prova."
+                afirmacao: [
+                    "Aplica táticas ágeis de leitura focada para economizar tempo e energia mental durante a prova.",
+                    "Deve-se ter muita atenção na leitura dos texto"
+                ]
             },
             {
                 texto: "Lê todo o texto com muita atenção antes de ir para as perguntas e alternativas.",
-                afirmacao: "Prioriza a interpretação profunda para evitar pegadinhas e ter certeza total da resposta."
+                afirmacao: [
+                    "Prioriza a interpretação profunda para evitar pegadinhas e ter certeza total da resposta.",
+                    "Prioriza a leitura rapida mas efetiva e de qualidade."
+                ]
             }
         ]
     },
@@ -62,11 +86,17 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Pesquisa notas de corte, faz simulações de cursos e cria vários planos de ação.",
-                afirmacao: "Trabalha com planejamento estratégico e flexibilidade para aproveitar as melhores oportunidades universitárias."
+                afirmacao: [
+                    "Trabalha com planejamento estratégico e flexibilidade para aproveitar as melhores oportunidades universitárias.",
+                    "Realzia pesquisas em universidades qual seria a melhor instituição."
+                ]
             },
             {
                 texto: "Mantém a calma, confia no processo de preparação realizado e aguarda os resultados finais.",
-                afirmacao: "Enfrenta grandes mudanças de ciclo com maturidade, autoconfiança e serenidade."
+                afirmacao: [
+                    "Enfrenta grandes mudanças de ciclo com maturidade, autoconfiança e serenidade.",
+                    "Relaxa e curte o momento,apenas aguardando o protoloco"
+                ]
             }
         ]
     }
